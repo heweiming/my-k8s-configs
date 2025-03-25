@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
-    argocd-image-updater.argoproj.io/image-list: emsp=ghcr.io/heweiming/emsp2/emsp
+    argocd-image-updater.argoproj.io/image-list: my-app=ghcr.io/heweiming/emsp2/emsp
     argocd-image-updater.argoproj.io/my-app.update-strategy: digest
     argocd-image-updater.argoproj.io/my-app.allow-tags: "^[0-9a-f]{7,40}$"
   labels:
