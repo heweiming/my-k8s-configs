@@ -32,7 +32,7 @@ spec:
         app: emsp
     spec:
       containers:
-      - image: sha256:85ee5c683bcd466053106ec79fdc8eb584556729e175999a0070295aa30420fb
+      - image: sha256:4cd3490663b859c4a7a53d8783b942a692a1195b52280659485b264f42e9ad06
         imagePullPolicy: IfNotPresent
         name: sha256
         resources: {}
