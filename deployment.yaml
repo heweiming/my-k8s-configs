@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
+    argocd-image-updater.argoproj.io/image-list: emsp=ghcr.io/heweiming/emsp2/emsp
+    argocd-image-updater.argoproj.io/my-app.update-strategy: digest
   creationTimestamp: "2025-03-23T14:01:40Z"
   generation: 1
   labels:
