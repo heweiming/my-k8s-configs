@@ -29,8 +29,8 @@ spec:
         app: emsp
     spec:
       containers:
-      - image: ghcr.io/heweiming/emsp2/emsp:7abd02c2fd210e5518752f5517c1d49c427ab09c
-        imagePullPolicy: IfNotPresent
+      - image: ghcr.io/heweiming/emsp2/emsp:latest
+        imagePullPolicy: Always
         name: emsp
         resources: {}
         terminationMessagePath: /dev/termination-log
