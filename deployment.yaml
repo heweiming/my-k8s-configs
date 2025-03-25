@@ -11,8 +11,6 @@ metadata:
     app: emsp
   name: emsp
   namespace: default
-  resourceVersion: "1040"
-  uid: 5bacde9b-6cba-4d40-af00-4fef5311f56d
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -27,7 +25,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: emsp
     spec:

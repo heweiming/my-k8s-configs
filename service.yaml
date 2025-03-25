@@ -1,13 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: "2025-03-23T14:02:48Z"
   labels:
     app: emsp
   name: emsp
   namespace: default
-  resourceVersion: "11517"
-  uid: 2d939575-32fc-4778-98e8-8bd4e7ac882f
 spec:
   clusterIP: 10.110.239.255
   clusterIPs:
