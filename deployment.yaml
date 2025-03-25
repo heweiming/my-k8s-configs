@@ -5,7 +5,6 @@ metadata:
     deployment.kubernetes.io/revision: "1"
     argocd-image-updater.argoproj.io/image-list: emsp=ghcr.io/heweiming/emsp2/emsp
     argocd-image-updater.argoproj.io/my-app.update-strategy: digest
-  creationTimestamp: "2025-03-23T14:01:40Z"
   generation: 1
   labels:
     app: emsp
@@ -32,9 +31,9 @@ spec:
         app: emsp
     spec:
       containers:
-      - image: sha256:4cd3490663b859c4a7a53d8783b942a692a1195b52280659485b264f42e9ad06
+      - image: ghcr.io/heweiming/emsp2/emsp
         imagePullPolicy: IfNotPresent
-        name: sha256
+        name: emsp
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
@@ -43,22 +42,4 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
-status:
-  availableReplicas: 1
-  conditions:
-  - lastTransitionTime: "2025-03-23T14:01:41Z"
-    lastUpdateTime: "2025-03-23T14:01:41Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
-  - lastTransitionTime: "2025-03-23T14:01:40Z"
-    lastUpdateTime: "2025-03-23T14:01:41Z"
-    message: ReplicaSet "emsp-86db46c847" has successfully progressed.
-    reason: NewReplicaSetAvailable
-    status: "True"
-    type: Progressing
-  observedGeneration: 1
-  readyReplicas: 1
-  replicas: 1
-  updatedReplicas: 1
+
