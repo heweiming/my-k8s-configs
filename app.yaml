@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: https://github.com/heweiming/my-k8s-configs.git
     targetRevision: main
-    path: .  # Path to YAML files (root of repo)
+    path: dev  # Path to YAML files (root of repo)
   destination:
     server: https://kubernetes.default.svc
     namespace: default
