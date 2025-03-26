@@ -3,11 +3,11 @@ kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
-    argocd-image-updater.argoproj.io/image-list: my-app=ghcr.io/heweiming/emsp2/emsp
-    argocd-image-updater.argoproj.io/my-app.update-strategy: latest
-    argocd-image-updater.argoproj.io/my-app.force-update: "true"
+    #argocd-image-updater.argoproj.io/image-list: my-app=ghcr.io/heweiming/emsp2/emsp
+    #argocd-image-updater.argoproj.io/my-app.update-strategy: latest
+    #argocd-image-updater.argoproj.io/my-app.force-update: "true"
  #   argocd-image-updater.argoproj.io/my-app.allow-tags: "^[0-9a-f]{7,40}$"
-    argocd-image-updater.argoproj.io/my-app.update-interval: 1m
+    #argocd-image-updater.argoproj.io/my-app.update-interval: 1m
   labels:
     app: emsp
   name: emsp
